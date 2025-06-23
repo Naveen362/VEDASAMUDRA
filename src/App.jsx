@@ -9,8 +9,9 @@ import NotFound from './NotFound';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import GaneshStore from './products/Products';
-import OrderStatus from './OrderStatus';
+
 import BulkOrders from './BulkOrders';
+import GaneshStore2 from './Addtocart';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     children: [
        { path: "/", element: <HOMESINGLE /> },
       { path: "/products", element:<GaneshStore/>},
-      { path: "/orderstatus", element: <OrderStatus/> },
+      { path: "/carts", element:<GaneshStore2/>},
       { path: "/bulkorders", element: <BulkOrders/> },
       
     ],

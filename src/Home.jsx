@@ -99,7 +99,7 @@ const RealEstateNavbar = () => {
                Bulk orders
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/orderstatus"
                 className={({ isActive }) =>
@@ -108,12 +108,14 @@ const RealEstateNavbar = () => {
               >
                Order status
               </NavLink>
-            </li>
+            </li> */}
             
           </ul>
           
         </div>
-        <button style={{width:"fit-content",border:"2px solid white",borderRadius:"20%",marginLeft:"100px"}}>🛒</button>
+       <NavLink className={({ isActive }) =>
+                  `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-light'}`
+                } to="/carts"> <button style={{width:"fit-content",border:"2px solid white",borderRadius:"20%",marginLeft:"10px"}}>🛒</button></NavLink>
 
       </nav>
 
