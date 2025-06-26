@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="col-md-3 col-sm-6 mb-4">
             <h5 className="text-warning">📞 Contact Info</h5>
-            <p className="small mb-1"><i className="fas fa-envelope me-2"></i> support@vedasamudra.com</p>
+            <p className="small mb-1"><i className="fas fa-envelope me-2"></i> vedasamudra@gmail.com</p>
             <p className="small mb-1"><i className="fas fa-phone me-2"></i> +91 **********</p>
             <p className="small"><i className="fas fa-map-marker-alt me-2"></i>Hyderabad, India</p>
           </div>
@@ -43,6 +43,14 @@ const Footer = () => {
                   type="email"
                   className="form-control form-control-sm"
                   placeholder="Your Email"
+                  required
+                />
+              </div>
+               <div className="mb-2">
+                <input
+                  type="tel"
+                  className="form-control form-control-sm"
+                  placeholder="Your Phone Number"
                   required
                 />
               </div>

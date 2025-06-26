@@ -51,7 +51,7 @@ const RealEstateNavbar = () => {
     <div className='position-relative'>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark px-4 py-3 shadow-lg" style={{ backgroundColor: '#34495E' }}>
         <NavLink to="/" style={{marginLeft:"20px"}} className="navbar-brand text-decoration-none">
-          <img src={"./ganesh.jpg"} style={{objectFit:"fill"}} width={180} height={60}/>
+          <img src={"./ganesh.jpg"} style={{objectFit:"fill",borderRadius:"20px 10px"}} width={180} height={60}/>
         </NavLink>
 
         <button
@@ -116,7 +116,7 @@ const RealEstateNavbar = () => {
        <NavLink className={({ isActive }) =>
                   `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-light'}`
                 } to="/carts"> <button style={{width:"fit-content",border:"2px solid white",borderRadius:"20%",marginLeft:"10px"}}>🛒</button></NavLink>
-
+          
       </nav>
 
       {/* Route Loading Spinner */}
