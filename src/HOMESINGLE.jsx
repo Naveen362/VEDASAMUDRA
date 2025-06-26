@@ -9,6 +9,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useOutletContext } from "react-router-dom";
 import Footer from './Footer';
 import GaneshStore from './products/Products';
+import TopProducts from './TopProducts';
+import Gallery from './Gallery';
 const pictures = ["./picture4.webp","./picture3.jpg","./picture1.jpg","./picture2.jpg"];
 
 const HOMESINGLE = () => {
@@ -129,6 +131,8 @@ const HOMESINGLE = () => {
           </div>
         </div>
       </div> */}
+      <TopProducts/>
+      <Gallery/>
       <GaneshStore/>
       <Footer/>
       

@@ -129,9 +129,9 @@ const sampleProducts = [
 const GaneshStore =() => {
   return (
     <div className="container my-5">
-      <h2 className="text-center text-danger mb-4 fw-bold">
-        🕉️ Veda Samudra Divine Store
-      </h2>
+      <h1 className="text-center text-danger mb-4 fw-bold">
+        <i className="bi bi-flower1 me-2" />  Veda Samudra Divine Store
+      </h1>
       <div className="row">
         {sampleProducts.map((product, index) => (
           <GaneshProductCard key={index} product={product} />
