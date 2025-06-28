@@ -11,6 +11,7 @@ import Footer from './Footer';
 import GaneshStore from './products/Products';
 import TopProducts from './TopProducts';
 import Gallery from './Gallery';
+import ImageCarousel from './imagecarosol/Carsol';
 const pictures = ["./picture4.webp","./picture3.jpg","./picture1.jpg","./picture2.jpg"];
 
 const HOMESINGLE = () => {
@@ -35,7 +36,7 @@ const HOMESINGLE = () => {
       <div className="container my-5">
         <div className="row align-items-center">
           {/* Images Section */}
-          <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+          {/* <div className="col-12 col-lg-6 mb-4 mb-lg-0">
             <div
               className="d-flex gap-3 overflow-auto border rounded-5 shadow"
               style={{
@@ -65,8 +66,8 @@ const HOMESINGLE = () => {
                 />
               ))}
             </div>
-          </div>
-
+          </div> */}
+             <ImageCarousel pictures={pictures}/>
           {/* About Section */}
           {/* About Section */}
 <div className="col-12 col-lg-6">
@@ -132,7 +133,7 @@ const HOMESINGLE = () => {
         </div>
       </div> */}
       <TopProducts/>
-      <Gallery/>
+      {/* <Gallery/> */}
       <GaneshStore/>
       <Footer/>
       

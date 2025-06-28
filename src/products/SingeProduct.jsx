@@ -17,7 +17,7 @@ const GaneshProductCard = ({ product }) => {
           <p className="card-text text-muted small text-center">{description}</p>
           <h6 className="text-center text-success mb-3">₹{price}</h6>
           <div className="d-flex justify-content-center">
-            <button className="btn btn-outline-warning btn-sm px-4">
+            <button className="btn btn-outline-primary btn-sm px-4">
               🛒 Add to Cart
             </button>
           </div>

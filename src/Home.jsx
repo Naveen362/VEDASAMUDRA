@@ -49,7 +49,7 @@ const RealEstateNavbar = () => {
 
   return (
     <div className='position-relative'>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark px-4 py-3 shadow-lg" style={{ backgroundColor: '#34495E' }}>
+      <nav className="navbar fixed-top navbar-expand-lg  px-4 py-3 shadow-lg" style={{ backgroundColor: '#FFFDD0',color:"black" }}>
         <NavLink to="/" style={{marginLeft:"20px"}} className="navbar-brand text-decoration-none">
           <img src={"./ganesh.jpg"} style={{objectFit:"fill",borderRadius:"20px 10px"}} width={180} height={60}/>
         </NavLink>
@@ -69,7 +69,7 @@ const RealEstateNavbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto list-unstyled d-flex gap-4 mb-0">
             {/* Navigation Links */}
-            <li>
+            {/* <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -78,12 +78,12 @@ const RealEstateNavbar = () => {
               >
                 Home
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to="/products"
                 className={({ isActive }) =>
-                  `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-light'}`
+                  `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-dark'}`
                 }
               >
               Products
@@ -93,7 +93,7 @@ const RealEstateNavbar = () => {
               <NavLink
                 to="/bulkorders"
                 className={({ isActive }) =>
-                  `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-light'}`
+                  `nav-link text-decoration-none ${isActive ?'text-primary fw-bold' : 'text-dark'}`
                 }
               >
                Bulk orders
@@ -114,8 +114,8 @@ const RealEstateNavbar = () => {
           
         </div>
        <NavLink className={({ isActive }) =>
-                  `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-light'}`
-                } to="/carts"> <button style={{width:"fit-content",border:"2px solid white",borderRadius:"20%",marginLeft:"10px"}}>🛒</button></NavLink>
+                  `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-dark'}`
+                } to="/carts"> <button style={{width:"fit-content",border:"2px solid white",borderRadius:"20%",marginLeft:"10px",fontSize:"25px"}}>🛒</button></NavLink>
           
       </nav>
 

@@ -32,10 +32,10 @@ const router = createBrowserRouter([
   // 404 fallback route — must be last
   ,{ path: "*", element: <NotFound /> },
 ]);
-
+//backgroundColor: '#f0fff0'
 function App() {
   return (
-    <div style={{ backgroundColor: '#f0fff0', color: '#556b2f', minHeight: '100vh' }}>
+    <div style={{ backgroundColor: '#FFFDD0', color: 'black', minHeight: '100vh' }}>
       <ToastContainer
         position="bottom-right"       // top-left, top-center, bottom-right, etc.
         autoClose={3500}           // milliseconds before auto-close
