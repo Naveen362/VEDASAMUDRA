@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import axios from 'axios';
+import { useSelector } from 'react-redux';
 const RealEstateNavbar = () => {
   const [user,setuser]=useState({});
   const naviagate=useNavigate();
@@ -46,7 +47,7 @@ const RealEstateNavbar = () => {
   //     toast.error('Submission failed. Please try again.');
   //   }
   // }
-
+  const {totalQuantity}=useSelector((state)=>state.cart)
   return (
     <div className='position-relative'>
       <nav className="navbar fixed-top navbar-expand-lg  px-4 py-3 shadow-lg" style={{ backgroundColor: '#FFFDD0',color:"black" }}>
@@ -115,7 +116,7 @@ const RealEstateNavbar = () => {
         </div>
        <NavLink className={({ isActive }) =>
                   `nav-link text-decoration-none ${isActive ? 'text-primary fw-bold' : 'text-dark'}`
-                } to="/carts"> <button style={{width:"fit-content",border:"2px solid white",borderRadius:"20%",marginLeft:"10px",fontSize:"25px"}}>🛒</button></NavLink>
+                } to="/carts"> <div style={{position:"relative"}}><h4 style={{position:"absolute",top:"-15px",right:"-5px",width:"25px",height:"25px",backgroundColor:"blue",color:"white",borderRadius:"50%"}} className='text-center'>{totalQuantity}</h4><button style={{width:"fit-content",border:"2px solid white",borderRadius:"20%",marginLeft:"10px",fontSize:"25px"}}>🛒</button></div></NavLink>
           
       </nav>
 

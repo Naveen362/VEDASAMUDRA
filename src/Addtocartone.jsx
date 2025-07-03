@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { toast } from 'react-toastify';
 const GaneshProductCard1 = ({ product, onAddToCart }) => {
   const { image, title, price, description } = product;
 
@@ -19,7 +19,7 @@ const GaneshProductCard1 = ({ product, onAddToCart }) => {
           <div className="d-flex justify-content-center">
             <button
               className="btn btn-outline-warning btn-sm px-4"
-              onClick={() => onAddToCart(product)}
+              onClick={() => {onAddToCart(product);toast.error("Removed From 🛒Cart")}}
             >
               🛒 Add to Cart
             </button>

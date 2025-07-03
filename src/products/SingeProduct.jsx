@@ -1,8 +1,10 @@
 import React from "react";
-
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from "../Redux/CartSlice";
+import { toast } from 'react-toastify';
 const GaneshProductCard = ({ product }) => {
   const { image, title, price, description } = product;
-
+const dispatch=useDispatch();
   return (
     <div className="col-md-3 col-sm-6 mb-4">
       <div className="card h-100 w-100 shadow-sm rounded-4 border-warning">
@@ -17,7 +19,7 @@ const GaneshProductCard = ({ product }) => {
           <p className="card-text text-muted small text-center">{description}</p>
           <h6 className="text-center text-success mb-3">₹{price}</h6>
           <div className="d-flex justify-content-center">
-            <button className="btn btn-outline-primary btn-sm px-4">
+            <button onClick={()=>{dispatch(addToCart(product));toast.success("ADDED TO CART🛒 ")}} className="btn btn-outline-primary btn-sm px-4">
               🛒 Add to Cart
             </button>
           </div>
